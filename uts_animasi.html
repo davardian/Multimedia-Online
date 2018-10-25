@@ -1,0 +1,81 @@
+<html>
+<head> 
+	<title> 3 Animasi Kendaraan</title>
+	<style type="text/css">
+		.jalur{
+			position: relative;
+			height: 100px;
+			background-color: #ddd;
+			margin: 20px;
+			border-radius: 5px;
+			border: 1px solid #999;
+			overflow: hidden;
+		}
+		
+		.kendaraan_a{
+			position: absolute;
+			height: 50px;
+			left: -50px;
+			animation: gerak_a 5s infinite;
+		}
+		
+		.kendaraan_b{
+			position: absolute;
+			height: 50px;
+			left: -50px;
+			animation: gerak_b 2s infinite;
+		}
+		
+		.kendaraan_c{
+			position: absolute;
+			height: 50px;
+			left: -50px;
+			top:0px;
+			opacity: 1;
+			animation: gerak_c 8s infinite;
+		}
+		 
+		img{
+			height: 100%;
+		}
+		
+		@keyframes gerak_a{
+			0% {left: -50px;}
+			100% {left: 100%;}
+		}
+		
+		@keyframes gerak_b{
+			0% {left: -50px;}
+			50% {left: 50%;}
+			100% {left: 100%;}
+		}
+		
+		@keyframes gerak_c{
+			0% {left: -50px; top:0px;opacity: 1;}
+			20%{left: 20%; top:50px;opacity: 0.2;}
+			40%{left: 40%; top:0px;opacity: 1;}
+			80%{left: 80%; top:50px;opacity: 0.2;}
+			100%{left: 100%; top:0px;opacity: 1;}
+		}
+	</style>
+</head>
+<body>
+	<div class="jalur">
+		<div class="kendaraan_a">
+			<img src="12.png">
+		</div>
+	</div>
+	
+	<div class="jalur">
+		<div class="kendaraan_b">
+			<img src="14.png">
+		</div>
+	</div>
+	
+	<div class="jalur">
+		<div class="kendaraan_c">
+			<img src="12.png">
+		</div>
+	</div>
+</body>
+</html>
